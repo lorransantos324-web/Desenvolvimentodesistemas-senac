@@ -1,0 +1,56 @@
+CONTEUSO DA SEGUNDA AULA 
+
+Foi aprensentados alguns dos principais aplicativos que iremos usar bastante
+git
+vscode 
+node
+
+houve uma pequena simulação da instalaçao do vscode
+
+# UTILIZAÇÃO DO GIT
+
+## 1. CONECTAR USUARIO
+
+COMANDOS 
+
+git config --global user.name "nomedeusuariodosistema"
+git config --global user.email "emailusuariodigit"
+
+<!-- OBJETIVO identificar o usúario que esá no projeto -->
+<!-- Este comando usa-se somente uma vez ou quando 
+necessita de nova identificação -->
+
+
+
+## 2. VERIFICANDO QUAL USUÁRIO ESTÁ LOGADO
+
+
+<!-- É importante na primeira vez que o github esteja
+logado, pois o sistema vai precisar dar permissão -->
+
+## PARA ENVIAR PARA O REPOSITÓRIO
+
+DIGITE: 
+
+
+
+
+
+
+
+
+
+
+
+
+## PARA BAIXAR ATUALIZAÇÕES DO REPOSITORIO
+
+git pull
+<!-- baixar as atualizaçõed do repositório -->
+
+Exemplo de caso:
+Pedro desenvolve seus projetos no trabalho . Ele executa os comandos git add -, git commit -m "nome" e git push.
+No final de semana, em casa, Pedro clona  seu projeto para seu computador pessoal. Realiza algumas alterações no projeto e atualiza no repositório repetindo novamente os comandos : git add ., git commit -m "nome" e git push.
+Na segunda-feira ao chegar no trabalho, Pedro abre o terminal
+e aplica o comando: git pull, para atualizar no trabalho os arquivos
+que ele alterou no final de semana.
