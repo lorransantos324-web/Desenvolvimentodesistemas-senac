@@ -3,7 +3,7 @@ let status = true
 let ação = prompt("indique uma ação 0 ou 1");
 
 
-if(ação!=="" && ação<=1  && ação>=0){
+if(ação!=="" && ação<=1  && ação>=0){ 
 let confimar =confirm("deseja alterar o sistema?");
 
 if(confimar){

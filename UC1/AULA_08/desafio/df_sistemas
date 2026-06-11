@@ -1,0 +1,26 @@
+// teste de booleana
+
+ let status = true 
+ let acao = prompt("Indique uma ação 0 para desativar ou 1 para ativar"); 
+
+ if(acao!== "" && acao <= 1 && acao >= 0){}
+let confimar = confirm ("Deseja alterar os sistema") 
+
+
+if (confimar) {
+     if ("acao válida") { if (confirmar) { if (acao == 0) { "desativar sistema" 
+
+     } else {
+         "ativar sistema "} } else {"cancelar alteração"} } else {"ação inválida"} 
+}
+
+ console.log("Sistema ativado"); if (acao == 0) { 
+    status = false 
+    console.log(` SISTEMA DESATIVADO AÇÃO ACIONADA: ${acao} STATUS ${status}${acao} `) } 
+ 
+ if (acao === 1){     
+ } else {
+  status = true 
+    console.log(` SISTEMA ATIVADO AÇÃO ACIONADA: ${acao} STATUS ${status} `) }
+     
+    
