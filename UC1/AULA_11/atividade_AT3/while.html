@@ -1,0 +1,50 @@
+<script> 
+let teste = prompt ("Digite qualquer coisa");
+
+let contador = 0 
+
+while(teste!==null){
+
+    contador ++
+
+if (contador < 3) {
+
+alert(`
+
+ REGISTRADO DE DADOS :
+ =======================================
+ DADO DIGITADO: ${teste}
+ CONTAGEM: ${contador}
+ `)
+} else {
+
+    alert (`
+    REGISTRADO DE DADOS
+    =================================== 
+    DADO DIGITADO: ${teste}
+    CONTAGEM: ${contador}
+    OPS! VOCÊ CHEGOU AO SEU LIMITE
+    AÇÃO SERÁ CANCELADA! 
+    `)
+      break
+}
+
+
+teste = prompt ("Digite qualquer coisa");
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+alert("Ação finalizada");
+
+</script>
