@@ -1,0 +1,33 @@
+<script>
+let option = prompt ("ANIMAIS")
+let lista = [
+   "VACA",
+   "GALINHA",
+   "OVELHA" ,
+   "PEIXE"
+]
+
+while (option !== null ) {
+
+lista.push(option);
+
+let retorno = "ANIMAIS\n"
+
+let i = 0
+let cont = lista.length 
+
+for(i;i<cont;i++){
+
+   retorno += `${i+1}.${lista[i]}\n` 
+
+}
+
+alert(retorno)
+
+ option = prompt ("ANIMAIS")
+
+
+
+}
+
+</script>
