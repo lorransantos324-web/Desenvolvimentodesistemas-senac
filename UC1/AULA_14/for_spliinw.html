@@ -1,7 +1,6 @@
   <script>
 // NOME ARQUIVO SPLITE.HTML
 
-let Material = Number(prompt("ESCREVA UM CÓDIGO PARA EXCLUIR"));
 
 let lista = [
   "CANETA",
@@ -11,27 +10,24 @@ let lista = [
   "MARCADOR"
 ];
 
+let Material = Number(prompt("ESCREVA UM CÓDIGO PARA EXCLUIR (0 para sair)"));
+
 while (Material !== 0) {
+
+  if (Material >= 1 && Material <= lista.length) {
+    lista.splice(Material - 1, 1);
+  } else {
+    alert("Código inválido!");
+  }
 
   let print = "LISTA DE MATERIAL\n";
 
-  lista.forEach(function(Material, i) {
-    print += `${i + 1}. ${Material}\n`;
+  lista.forEach(function(material, i) {
+    print += `${i + 1}. ${material}\n`;
   });
 
-
-
-while (Material !== 0 ){ 
-  lista.splice(Material - 1, 1);
-let print = "*LISTA DE MATERIAL\n"
-lista.forEach(function(material,i){
-    print += `${i+1}.${material}`
-})
-  
-
-  }
   alert(print);
 
-  Material = Number(prompt("ESCREVA UM CÓDIGO PARA EXCLUIR"));
+  Material = Number(prompt("ESCREVA UM CÓDIGO PARA EXCLUIR (0 para sair)"));
 }
 </script>

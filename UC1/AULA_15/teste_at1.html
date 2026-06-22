@@ -1,0 +1,56 @@
+<script>
+
+let opcao = Number(prompt(`
+DIGITE:
+1 - Adicionar cliente
+2 - Excluir cliente
+0 - Sair
+`));
+
+let clientes = ["LUCAS", "KAIO", "MILLA"];
+
+while (opcao !== 0) {
+
+  if (opcao === 1) {
+
+    let novoCliente = prompt("Digite o nome do cliente:");
+
+    if (novoCliente !== null && novoCliente.trim() !== "") {
+      clientes.push(novoCliente);
+      alert("Cliente adicionado com sucesso!");
+    } else {
+      alert("Nome inválido!");
+    }
+
+  } 
+  
+  else if (opcao === 2) {
+
+    let indice = Number(prompt("Digite o número do cliente para excluir (1,2,3...)"));
+
+    if (indice > 0 && indice <= clientes.length) {
+      clientes.splice(indice - 1, 1);
+      alert("Cliente excluído!");
+    } else {
+      alert("Código inválido!");
+    }
+
+  } 
+  
+  else {
+    alert("Opção inválida!");
+  }
+
+  console.log(clientes);
+
+  opcao = Number(prompt(`
+DIGITE:
+1 - Adicionar cliente
+2 - Excluir cliente
+0 - Sair
+`));
+}
+
+alert("Programa finalizado!");
+
+</script>
