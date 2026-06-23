@@ -1,0 +1,33 @@
+<Script>
+  function somar(v1,v2){
+
+let soma = v1+v2
+alert(`Soma total de ${v1} + ${v2} é igual a: ${soma}`)
+
+
+}
+
+
+function operacoes (v1,v2,lapis) {
+  let resultado = "" 
+      if(lapis == "somar") {
+            resultado = v1 + v2
+
+      } else if (lapis == "subtrair") {
+            resultado = v1 - v2
+      
+        } else if (lapis == "multiplicar") {
+            resultado = v1*v2 
+        } else {
+            resultado = v1/v2
+        }
+ alert (`A operação ${lapis}
+ de ${v1} e ${v2}
+ resultou em ${resultado}`)
+
+}
+ operacoes(300,500,"somar") 
+
+
+
+</Script>
