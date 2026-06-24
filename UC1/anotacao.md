@@ -31,9 +31,5 @@ Nome: ${nomes[novonum]}
 `);
     }
 
-    option = prompt("Selecione um cliente (Digite o código)");
-}
-
-alert("Ação Cancelada");
-
+    option = prompt("S
 </script>
