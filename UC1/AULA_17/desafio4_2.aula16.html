@@ -1,0 +1,29 @@
+<script>
+function verificarSituacao() {
+
+  while (true) {
+
+    let media = Number(prompt("DIGITE A MÉDIA DO ALUNO"));
+
+    if (media < 0 || media > 10 || isNaN(media)) {
+      alert("MÉDIA INVÁLIDA! DIGITE UM VALOR ENTRE 0 E 10.");
+      continue;
+    }
+
+    if (media >= 7) {
+      alert("APROVADO");
+    } else if (media >= 6) {
+      alert("RECUPERAÇÃO");
+    } else {
+      alert("ALUNO REPROVADO");
+    }
+
+    let repetir = confirm("DESEJA VERIFICAR OUTRA MÉDIA?");
+
+    if (!repetir) {
+      break;}
+  }
+}
+
+verificarSituacao();
+</script>

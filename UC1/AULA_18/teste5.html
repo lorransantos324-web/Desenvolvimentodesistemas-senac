@@ -1,0 +1,34 @@
+<script>
+
+function calcularPrecoVenda() {
+
+    while (true) {
+    let custo = Number(prompt("DIGITE O VALOR DE CUSTO"));
+
+    if ( custo <= 0) {
+        alert("CUSTO INVÁLIDO!");
+        return;
+    }
+
+    let percentual = Number(prompt("DIGITE O PERCENTUAL DE LUCRO"));
+
+    if ( percentual < 0) {
+        alert("PERCENTUAL INVÁLIDO!");
+        return;
+    }
+
+    let lucro = custo * percentual / 100;
+    let precoVenda = custo + lucro;
+
+    alert("O LUCRO É: " + lucro);
+    return precoVenda;
+}
+}
+
+let resultado = calcularPrecoVenda();
+
+if (resultado !== undefined) {
+    alert("PREÇO DE VENDA: R$ " + resultado.toFixed(2));
+}
+
+</script>

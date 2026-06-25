@@ -1,0 +1,36 @@
+<script>
+
+function calcularDesconto() {
+
+    while (true) {
+
+        let valorCompra = Number(prompt("DIGITE O VALOR DA COMPRA"));
+
+        if (isNaN(valorCompra) || valorCompra <= 0) {
+            alert("VALOR DA COMPRA INVÁLIDO!");
+            continue; o
+        }
+
+        let percentualDesconto = Number(prompt("DIGITE O PERCENTUAL DE DESCONTO"));
+
+        if (isNaN(percentualDesconto) || percentualDesconto < 0) {
+            alert("DESCONTO INVÁLIDO!");
+            continue; 
+        }
+
+        let valorDesconto = valorCompra * percentualDesconto / 100;
+        let valorFinal = valorCompra - valorDesconto;
+
+        alert(
+            "VALOR DA COMPRA: R$ " + valorCompra.toFixed(2) + "\n" +
+            "DESCONTO: R$ " + valorDesconto.toFixed(2) + "\n" +
+            "VALOR FINAL: R$ " + valorFinal.toFixed(2)
+        );
+
+        
+    }
+}
+
+calcularDesconto();
+
+</script>
